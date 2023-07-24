@@ -1,8 +1,8 @@
-# RedPitaya
+# RedPitaya-DSP
 Collection of references for my Red Pitaya research project funded by the University of Kentucky.
 
 # Purpose
-This GitHub repository is a publicly available set of documents created during my undergraduate research at the University of Kentucky. My research is centered around the application of the Red Pitaya ecosystem of open-source FPGAs and their application to independent research, academics, and the professional space. Throughout my documentation I rely on [Red Pitaya's GitHub](https://github.com/RedPitaya/RedPitaya.git) and Vestaia's work with a similar project at https://github.com/Vestaia/DSP.
+This GitHub repository is a publicly available repository created during my undergraduate research at the University of Kentucky. My research is centered around the application of the Red Pitaya ecosystem of open-source FPGAs to digital signal processing in academic, independent, and professional spaces.
 
 # How to Build Pavel Demin's Cores
 Pavel has extenive notes on working with the Red Pitaya, most of which can be found [here](https://github.com/pavel-demin/red-pitaya-notes/tree/master). The scripts used in the following steps are a modification of those made by Pavel.
