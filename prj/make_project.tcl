@@ -5,7 +5,7 @@
 #
 # This script is a modification of Red Pitaya's make_project.tcl script.
 #
-# Uncomment the project you wish to run, save file, and run script.
+# Uncomment (remove #) the "set" command for the project you wish to run, save file, and run script.
 #
 # ==================================================================================================
 
