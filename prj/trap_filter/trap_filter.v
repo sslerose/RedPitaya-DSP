@@ -119,17 +119,17 @@ module trap_filter #
             end
 
         end else if (~en_filter) begin
-		en_filter <= 1;
+	    en_filter <= 1;
         end
 
         if (en_filter) begin
-            	//Filter arithmetic
-	        K_diff_tdata <= s_axis_tdata - K_delay_tdata;		// Subtractor 1
-	        L_diff_tdata <= K_diff_tdata - L_delay_tdata;		// Subtractor 2
-	        mult_tdata <= L_diff_tdata * (mult_factor - 1/2);	// Multiplier
-	        accu_tdata <= accu_tdata + L_diff_tdata;		// Accumulator 1
-	        sum_tdata <= mult_tdata + accu_tdata;			// Adder
-	        result_tdata <= result_tdata + sum_tdata;		// Accumulator 2
+            //Filter arithmetic
+	    K_diff_tdata <= s_axis_tdata - K_delay_tdata;	// Subtractor 1
+	    L_diff_tdata <= K_diff_tdata - L_delay_tdata;	// Subtractor 2
+	    mult_tdata <= L_diff_tdata * (mult_factor - 1/2);	// Multiplier
+	    accu_tdata <= accu_tdata + L_diff_tdata;		// Accumulator 1
+	    sum_tdata <= mult_tdata + accu_tdata;		// Adder
+	    result_tdata <= result_tdata + sum_tdata;		// Accumulator 2
         end
     end
 endmodule
