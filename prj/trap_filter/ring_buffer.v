@@ -29,7 +29,7 @@ module ring_buffer #
   input clk,
   input enrd,
   input enwr,
-  input [8:0] delay,
+  input [13:0] delay,
   input signed [AXIS_TDATA_WIDTH-1:0] wr_data,
   output signed [AXIS_TDATA_WIDTH-1:0] rd_data
 );
