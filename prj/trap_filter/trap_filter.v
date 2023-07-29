@@ -22,8 +22,7 @@
 
 module trap_filter #
 (
-    parameter integer AXIS_TDATA_WIDTH = 16,
-    parameter integer DAC_WIDTH = 14
+    parameter integer AXIS_TDATA_WIDTH = 16
 )
 (
     input clk,
