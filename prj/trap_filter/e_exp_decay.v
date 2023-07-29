@@ -44,7 +44,7 @@ module e_exp_decay #
             
         end else begin
             if (trigger) begin
-	           current_value <= sig_amp;   // Set initial peak for exponential signal
+	       current_value <= sig_amp;   // Set initial peak for exponential signal
 
             end else if (current_value != 0) begin
                mult = current_value * decay_factor; // Multiply by decay factor
