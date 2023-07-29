@@ -48,7 +48,7 @@ module e_exp_decay #
 
             end else if (current_value != 0) begin
                mult = current_value * decay_factor; // Multiply by decay factor
-	           current_value <= (mult) >> 14;       // Shift to implement fixed-point multiplication
+	       current_value <= (mult) >> 14;       // Shift to implement fixed-point multiplication
 
             end
         end
