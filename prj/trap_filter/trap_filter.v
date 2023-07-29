@@ -48,7 +48,6 @@ module trap_filter #
 
     reg [28:0] buff_iterate;	 	// Counter for handling ring buffers
     reg enwrK, enrdK, enrdL, enwrL;	// Enable read and write for ring buffers
-    reg en_filter;		        // Enable filter
 
     assign m_axis_tvalid = s_axis_tvalid;
     assign m_axis_tdata = result_tdata;
@@ -87,10 +86,9 @@ module trap_filter #
             enwrK <= 0;
             enrdL <= 0;
             enwrL <= 0;
-            en_filter <= 0;
 
         // Buffer handling
-        end else if (buff_iterate < Kdelay + Ldelay + 1) begin
+	end else if (buff_iterate < Kdelay + Ldelay + 2) begin
             // Iterate buffer controller
             buff_iterate <= buff_iterate + 1;
 
@@ -117,11 +115,7 @@ module trap_filter #
 		enrdL <= 1;
             end
 
-        end else if (~en_filter) begin
-	    en_filter <= 1;
-        end
-
-        if (en_filter) begin
+	end else begin
             //Filter arithmetic
 	    K_diff_tdata <= s_axis_tdata - K_delay_tdata;	// Subtractor 1
 	    L_diff_tdata <= K_diff_tdata - L_delay_tdata;	// Subtractor 2
