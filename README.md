@@ -1,8 +1,8 @@
 # RedPitaya-DSP
-Collection of references for my Red Pitaya research project funded by the University of Kentucky.
+Collection of references for my Red Pitaya research project at the University of Kentucky.
 
 # Purpose
-This GitHub repository is a publicly available repository created during my undergraduate research at the University of Kentucky. My research is centered around the application of the Red Pitaya ecosystem of open-source FPGAs to digital signal processing in academic, independent, and professional spaces.
+This collection is a publicly available repository created during my undergraduate research at the University of Kentucky. My research is centered around the application of the Red Pitaya ecosystem of open-source FPGAs to digital signal processing in an academic space.
 
 # Cloning the Repository
 Steps for cloning the repository.
