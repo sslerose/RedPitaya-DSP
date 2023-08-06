@@ -9,6 +9,12 @@ create_project -part $part_name $core_name tmp/pavel-cores
 
 add_files -norecurse cores/$core_name.v
 
+if { $core_name == {axi_hub} } {
+	add_files -norecurse pavel-buffer-modules/inout_buffer.v
+	add_files -norecurse pavel-buffer-modules/input_buffer.v
+	add_files -norecurse pavel-buffer-modules/output_buffer.v
+}
+
 ipx::package_project -import_files -root_dir tmp/pavel-cores/$core_name
 
 set core [ipx::current_core]
