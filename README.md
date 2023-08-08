@@ -1,8 +1,8 @@
-# RedPitaya-DSP
-Collection of references for my Red Pitaya research project at the University of Kentucky.
-
 # Purpose
 This collection is a publicly available repository created during my undergraduate research at the University of Kentucky. My research is centered around the application of the Red Pitaya ecosystem of open-source FPGAs to digital signal processing in an academic space.
+
+# Creating a Development Machine
+The "[Dev_Machine_Instructions](./Dev_Machine_Instructions.pdf)" PDF contains all the necessary steps needed to create an FPGA development machine on a Windows 10 or 11 device.
 
 # Cloning the Repository
 Steps for cloning the repository.
@@ -35,3 +35,8 @@ Vivado will generate the necessary cores for the respective project and then ass
 * [RedPitaya-FPGA](https://github.com/RedPitaya/RedPitaya-FPGA/tree/master)
 * [Vestaia's DSP](https://github.com/Vestaia/DSP/tree/main)
 * [Pavel Demin's red-pitaya-notes](https://github.com/pavel-demin/red-pitaya-notes/tree/master)
+
+# Acknowledgements
+Special thanks to Pavel Demin and the Red Pitaya team for their assistance in my projects.
+
+This project was funded in part by a Summer Undergraduate Research Award through the University of Kentucky, College of Arts and Sciences.
