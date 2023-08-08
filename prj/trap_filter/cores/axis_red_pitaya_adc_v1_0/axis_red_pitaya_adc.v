@@ -12,8 +12,8 @@ module axis_red_pitaya_adc #
 
   // ADC signals
   output wire        adc_csn,
-  input  wire [ADC_DATA_WIDTH - 1:0] adc_dat_a,
-  input  wire [ADC_DATA_WIDTH - 1:0] adc_dat_b,
+  input  wire [15:0] adc_dat_a,
+  input  wire [15:0] adc_dat_b,
 
   // Master side
   output wire        	m_axis_tvalid,
