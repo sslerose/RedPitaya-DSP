@@ -2,7 +2,7 @@
 This collection is a publicly available repository created during my undergraduate research at the University of Kentucky. My research is centered around the application of the Red Pitaya ecosystem of open-source FPGAs to digital signal processing in an academic space.
 
 # Creating a Development Machine
-The "[Dev_Machine_Instructions](./Dev_Machine_Instructions.pdf)" PDF contains all the necessary steps needed to create an FPGA development machine on a Windows 10 or 11 device.
+The "[Dev Machine Instructions](./Dev Machine Instructions.pdf)" PDF contains all the necessary steps needed to create an FPGA development machine on a Windows 10 or 11 device.
 
 # Cloning the Repository
 Steps for cloning the repository.
